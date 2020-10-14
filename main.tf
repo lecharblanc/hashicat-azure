@@ -123,6 +123,7 @@ resource "azurerm_virtual_machine" "catapp" {
   }
   tags = {
     environment = "devops"
+    Billable = true
   }
 }
 
