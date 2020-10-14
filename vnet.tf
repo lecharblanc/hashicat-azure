@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "myresourcegroup" {
-  name     = "${var.prefix}-workshop"
-  location = var.location
-}
-
 module "network" {
   source  = "app.terraform.io/BENNET-Training/network/azurerm"
   resource_group_name = azurerm_resource_group.myresourcegroup.name
